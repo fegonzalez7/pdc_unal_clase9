@@ -63,7 +63,7 @@ def elevarCuadrado(x:float) -> float:
 if __name__ == "__main__":
   x = float(input("Ingrese un numero real:"))
   xSquared = elevarCuadrado(x)
-  print("El cuadrado de " + str(x) "es " + str(xSquared))
+  print("El cuadrado de " + str(x)+ "es " + str(xSquared))
 ```
 
 **Ejemplo:** Escribir un programa que ingrese la base y la altura de un rectángulo y usando una función retorne su área.
@@ -130,6 +130,54 @@ if __name__ == "__main__":
   print("Variable global", mensaje)
 ```
 
+### Import
+Normalmente las funciones se organizan en librerias (en el caso de Python se llaman paquetes) que se pueden importar ser usadas, en lo anterior radica la potencia de los lenguages de programación como Python, Java y C, en el desarrollo de potentes librerías que permiten ejecutar una infinidad de tareas.
+
+La palabra reservada para importar paquetes en Python es *import*, puede traer un módulo completo o traer parte de las funciones de un módulo. 
+
+El archivo [operaciones.py](/operaciones.py) contiene dos funciones, una para elevar al cuadrado y otra para sumar dos números.
+```python
+# operaciones.py
+def elevarCuadrado(x:float) -> float:
+  return x**2
+
+def sumarDosNumeros(x:float, y:float) -> float:
+  return x+y
+```
+
+El archivo [calculadora.py](/calculadora.py) en la línea 1 importa todas la funciones de operaciones usando el simbolo (*). Alternativamente se podría usar `from operaciones import elevarCuadrado` y solo traeria la función elevar al cuadrado.
+
+```python
+from operaciones import *
+
+if __name__ == "__main__":
+  x = float(input("Ingrese un numero real:"))
+  xSquared = elevarCuadrado(x)
+  print("El cuadrado de " + str(x) + " es " + str(xSquared))
+
+  y = float(input("Ingrese un numero real:"))
+  suma = sumarDosNumeros(x,y)
+  print("La suma de " + str(x) + " y " + str(y) + " es " + str(suma))
+```
+
+El archivo [calculadora2.py](/calculadora2.py) en la línea 1 importa todo el módulo `operaciones` por ende cuando se desea usar una función se debe invocar las funciones antecediendolas con `operaciones.` (en el curso de POO lo entenderán en detalle).
+
+```python
+import operaciones
+
+if __name__ == "__main__":
+  x = float(input("Ingrese un numero real:"))
+  xSquared = operaciones.elevarCuadrado(x)
+  print("El cuadrado de " + str(x) + " es " + str(xSquared))
+
+  y = float(input("Ingrese un numero real:"))
+  suma = operaciones.sumarDosNumeros(x,y)
+  print("La suma de " + str(x) + " y " + str(y) + " es " + str(suma))
+```
+
+**Ejercicio:** Uno de los módulos que trae python es *math*, hacer un porgrama en Python importando *math* y usar 5 de las funciones incluidas en este módulo.
+
+
 ## Reto 7
 Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual. Al finalizar suba todo a un repo y subalo al canal reto_7 en slack.
 
@@ -171,3 +219,9 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
   + Ordenar los números de forma descendente
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
+
+8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+
+9. Consultar qué es y cómo funciona *pip* en python.
+
+10. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
