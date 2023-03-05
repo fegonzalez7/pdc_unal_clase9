@@ -178,7 +178,7 @@ if __name__ == "__main__":
 **Ejercicio:** Uno de los módulos que trae python es *math*, hacer un porgrama en Python importando *math* y usar 5 de las funciones incluidas en este módulo.
 
 
-## Reto 7
+## Reto 6
 Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual. Al finalizar suba todo a un repo y subalo al canal reto_7 en slack.
 
 1. Dado la figura de la imagen, desarrolle:
