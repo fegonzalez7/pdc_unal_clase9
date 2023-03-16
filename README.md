@@ -13,7 +13,7 @@ Al conjunto A se le denomina dominio y al conjunto B como rango. En programació
 + Mejorar la abstracción de un proceso.
 
 ### Funciones en python 
-Para declarar una función de utiliza la palabra reservada *def* seguida del nombre de la función, el cual debe ser un identificador válido (revisar clase 6), en paréntesis se listan los argumentos y se sigue con *:*, se indetan las instrucciones y si la función retorna algo se usa la palabra reservada *return*.
+Para declarar una función se utiliza la palabra reservada *def* seguida del nombre de la función, el cual debe ser un identificador válido (revisar clase 6), en paréntesis se listan los argumentos y se sigue con *:*, se indetan las instrucciones y si la función retorna algo se usa la palabra reservada *return*.
 
 ```python
 def nombreDeLaFuncion(arg1, arg2, ... , argn):
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 ```
 
 ### Import
-Normalmente las funciones se organizan en librerias (en el caso de Python se llaman paquetes) que se pueden importar ser usadas, en lo anterior radica la potencia de los lenguages de programación como Python, Java y C, en el desarrollo de potentes librerías que permiten ejecutar una infinidad de tareas.
+Normalmente las funciones se organizan en librerias (en el caso de Python se llaman paquetes) que se pueden importar para ser usadas, en lo anterior radica la potencia de los lenguages de programación como Python, Java y C, en el desarrollo de potentes librerías que permiten ejecutar una infinidad de tareas.
 
 La palabra reservada para importar paquetes en Python es *import*, puede traer un módulo completo o traer parte de las funciones de un módulo. 
 
@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
 
 ## Reto 6
-Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual. Al finalizar suba todo a un repo y subalo al canal reto_7 en slack.
+Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual. Al finalizar suba todo a un repo y subalo al canal reto_6 en slack.
 
 1. Dado la figura de la imagen, desarrolle:
 
