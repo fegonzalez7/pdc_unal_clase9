@@ -12,8 +12,8 @@ Al conjunto A se le denomina dominio y al conjunto B como rango. En programació
 + Separar y organizar procesos de manera eficiente, *traducción:* Divide y vencerás.
 + Mejorar la abstracción de un proceso.
 
-### Funciones en python 
-Para declarar una función se utiliza la palabra reservada *def* seguida del nombre de la función, el cual debe ser un identificador válido (revisar clase 6), en paréntesis se listan los argumentos y se sigue con *:*, se indetan las instrucciones y si la función retorna algo se usa la palabra reservada *return*.
+### Funciones en Python 
+Para declarar una función se utiliza la palabra reservada *def* seguida del nombre de la función, el cual debe ser un identificador válido (revisar clase 6), en paréntesis se listan los argumentos y se sigue con *:*, se indentan las instrucciones y si la función retorna algo se usa la palabra reservada *return*.
 
 ```python
 def nombreDeLaFuncion(arg1, arg2, ... , argn):
@@ -33,19 +33,19 @@ El flujo normal de un progama **secuencial** en python luce de esta manera:
 <importar librerias>
 <declarar constantes>
 <funciones>
-<funcion_main> # Iuncion principal
+<funcion_main> # Función principal
 <declarar variables>
 <ejecurtar procesos> # Implica llamar a las funciones declaradas
 ```
 ### La función main
-Es la función principal de cualquier programa escrito en python que se quiera ejecutar como script, es el denomiando *entry point*. La sintaxis es:
+Es la función principal de cualquier programa escrito en Python que se quiera ejecutar como script, es el denomiando *entry point*. La sintaxis es:
 
 ```python
 if __name__ == "__main__":
   # codigo aqui
 ```
 
-Si bien se pueden ejecutar programas sin necesidad de definir la función *main* no es una buena práctica.
+Si bien se pueden ejecutar programas sin necesidad de definir la función *main*, no es una buena práctica.
 
 **Pro tip:** En C o C++ el equivalente era declarar:
 ```C
