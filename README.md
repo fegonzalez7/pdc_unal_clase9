@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 **Ejecicio:** Realice un programa que ingrese dos masas y la distancia que las separa y calcule la fuerza de gravedad entre ellas. Resuelva usando una función.
 
-$$\text{Ley de la gravitación universal:} \ G=\frac{m_1 \cdot m_2}{r^2}$$
+$$\text{Ley de la gravitación universal:} \ F=G\frac{m_1 \cdot m_2}{r^2}$$
 
 ```python
 G : float = 6.67384e-11 # Constante de Cavendish [Nm^2/kg^2]
