@@ -1,6 +1,6 @@
 
-def elevarCuadrado(x:float) -> float:
+def elevar_al_cuadrado(x:float) -> float:
   return x**2
 
-def sumarDosNumeros(x:float, y:float) -> float:
+def sumar_dos_numeros(x:float, y:float) -> float:
   return x+y

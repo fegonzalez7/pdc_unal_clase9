@@ -1,4 +1,14 @@
 # Programación de Computadores - UNAL
+
+## Tabla de Contenidos
+- [Funciones 1](#funciones-1)
+- [Utilidad de las funciones](#utilidad-de-las-funciones)
+- [Funciones en Python](#funciones-en-python)
+- [La función main](#la-función-main)
+- [Scope o alcance](#scope-o-alcance)
+- [Import](#import)
+- [Reto 6](#reto-6)
+
 ## Funciones 1
 
 En programación, así como en matemáticas, para las funciones definidas como:
@@ -13,7 +23,7 @@ Al conjunto A se le denomina dominio y al conjunto B como rango. En programació
 + Mejorar la abstracción de un proceso.
 
 ### Funciones en Python 
-Para declarar una función se utiliza la palabra reservada *def* seguida del nombre de la función, el cual debe ser un identificador válido (revisar clase 6), en paréntesis se listan los argumentos y se sigue con *:*, se indentan las instrucciones y si la función retorna algo se usa la palabra reservada *return*.
+Para declarar una función se utiliza la palabra reservada `def` seguida del nombre de la función, el cual debe ser un identificador válido (revisar [clase 6](https://github.com/fegonzalez7/pdc_unal_clase6)), en paréntesis se listan los argumentos y se sigue con `:`, se indentan las instrucciones y si la función retorna algo se usa la palabra reservada `return`.
 
 ```python
 def nombreDeLaFuncion(arg1, arg2, ... , argn):
@@ -25,7 +35,7 @@ $$f: R \rightarrow R$$
 $$f(x) \rightarrow x^2$$
 
 ```python
-def elevarCuadrado(x:float):
+def elevar_al_cuadrado(x:float):
   return x**2
 ```
 El flujo normal de un progama **secuencial** en python luce de esta manera:
@@ -35,7 +45,7 @@ El flujo normal de un progama **secuencial** en python luce de esta manera:
 <funciones>
 <funcion_main> # Función principal
 <declarar variables>
-<ejecurtar procesos> # Implica llamar a las funciones declaradas
+<ejectar procesos> # Implica llamar a las funciones declaradas
 ```
 ### La función main
 Es la función principal de cualquier programa escrito en Python que se quiera ejecutar como script, es el denomiando *entry point*. La sintaxis es:
@@ -57,27 +67,27 @@ int main(void){
 **Ejemplo:** Escribir un programa que ingrese un flotante por teclado y usando una funcion retorne el cuadrado del número.
 
 ```python
-def elevarCuadrado(x:float) -> float:
+def elevar_al_cuadrado(x:float) -> float:
   return x**2
 
 if __name__ == "__main__":
   x = float(input("Ingrese un numero real:"))
-  xSquared = elevarCuadrado(x)
-  print("El cuadrado de " + str(x)+ "es " + str(xSquared))
+  x_squared = elevar_al_cuadrado(x)
+  print("El cuadrado de " + str(x)+ "es " + str(x_squared))
 ```
 
 **Ejemplo:** Escribir un programa que ingrese la base y la altura de un rectángulo y usando una función retorne su área.
 
 En este caso la función debe recibir dos parámetros y retorna uno.
 ```python
-def calcularAreaRectangulo(base:float, altura:float) -> float:
-  areaRectangulo = base*altura
-  return areaRectangulo
+def calcular_area_rectangulo(base:float, altura:float) -> float:
+  area_rectangulo = base*altura
+  return area_rectangulo
 
 if __name__ == "__main__":
   base = float(input("Ingrese base del rectangulo:"))
   altura = float(input("Ingrese altura del rectangulo:"))
-  area = calcularAreaRectangulo(base, altura)
+  area = calcular_area_rectangulo(base, altura)
   print("El area del rectagulo es " + str(area))
 ```
 
@@ -138,10 +148,10 @@ La palabra reservada para importar paquetes en Python es *import*, puede traer u
 El archivo [operaciones.py](/operaciones.py) contiene dos funciones, una para elevar al cuadrado y otra para sumar dos números.
 ```python
 # operaciones.py
-def elevarCuadrado(x:float) -> float:
+def elevar_al_cuadrado(x:float) -> float:
   return x**2
 
-def sumarDosNumeros(x:float, y:float) -> float:
+def sumar_dos_numeros(x:float, y:float) -> float:
   return x+y
 ```
 
@@ -152,11 +162,11 @@ from operaciones import *
 
 if __name__ == "__main__":
   x = float(input("Ingrese un numero real:"))
-  xSquared = elevarCuadrado(x)
-  print("El cuadrado de " + str(x) + " es " + str(xSquared))
+  x_squared = elevar_al_cuadrado(x)
+  print("El cuadrado de " + str(x) + " es " + str(x_squared))
 
   y = float(input("Ingrese un numero real:"))
-  suma = sumarDosNumeros(x,y)
+  suma = sumar_dos_numeros(x,y)
   print("La suma de " + str(x) + " y " + str(y) + " es " + str(suma))
 ```
 
@@ -167,18 +177,30 @@ import operaciones
 
 if __name__ == "__main__":
   x = float(input("Ingrese un numero real:"))
-  xSquared = operaciones.elevarCuadrado(x)
+  x_squared = operaciones.elevar_al_cuadrado(x)
   print("El cuadrado de " + str(x) + " es " + str(xSquared))
 
   y = float(input("Ingrese un numero real:"))
-  suma = operaciones.sumarDosNumeros(x,y)
+  suma = operaciones.sumar_dos_numeros(x,y)
   print("La suma de " + str(x) + " y " + str(y) + " es " + str(suma))
 ```
 
 **Ejercicio:** Uno de los módulos que trae python es *math*, hacer un porgrama en Python importando *math* y usar 5 de las funciones incluidas en este módulo.
 
+----
+### Info adicional
 
-## Reto 6
+- [Python functions](https://learn.microsoft.com/en-us/training/modules/functions-python/)
+- [Functions explanation python](https://stackoverflow.com/questions/32409802/basic-explanation-of-python-functions)
+- [All You Need to know About Functions in Python](https://medium.com/@datasciencejourney100_83560/all-you-need-to-know-about-functions-in-python-8d39d06ec691)
+------
+
+- [Ejercicio de funciones - Hackerrank](https://www.hackerrank.com/challenges/write-a-function/problem?isFullScreen=true)
+
+
+----
+
+## Reto 5
 Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual. Al finalizar suba todo a un repo y subalo al canal reto_6 en slack.
 
 1. Dado la figura de la imagen, desarrolle:
@@ -205,23 +227,17 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
 
-4. Mi mamá me manda a comprar P panes a 300 cada uno, M bolsas de leche a  3300 cada una y H huevos a  350 cada uno. Hacer un programa que me diga las vueltas (o lo que quedo debiendo) cuando me da un billete de B pesos.
+4. Haga un programa que utilice una función para calcular el valor de un préstamo `C` usando interés compuesto del `i` por `n` meses.
 
-5. Haga un programa que utilice una función para calcular el valor de un préstamo `C` usando interés compuesto del `i` por `n` meses.
-
-6. El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
-
-7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
+5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
   + El promedio
   + La mediana 
   + El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
-  + Ordenar los números de forma ascendente
-  + Ordenar los números de forma descendente
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
 
-8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+6. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
 
-9. Consultar qué es y cómo funciona *pip* en python.
+7. Consultar qué es y cómo funciona *pip* en python.
 
-10. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
+8. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
