@@ -26,7 +26,7 @@ Al conjunto A se le denomina dominio y al conjunto B como rango. En programació
 Para declarar una función se utiliza la palabra reservada `def` seguida del nombre de la función, el cual debe ser un identificador válido (revisar [clase 6](https://github.com/fegonzalez7/pdc_unal_clase6)), en paréntesis se listan los argumentos y se sigue con `:`, se indentan las instrucciones y si la función retorna algo se usa la palabra reservada `return`.
 
 ```python
-def nombreDeLaFuncion(arg1, arg2, ... , argn):
+def nombre_de_la_funcion(arg1, arg2, ... , argn):
   <instrucciones de la función>
   return <datos que retorna la función>
 ```
@@ -231,13 +231,10 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 5. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
   + El promedio
-  + La mediana 
   + El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
 
-6. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+6. Consultar qué es y cómo funciona *pip* en python.
 
-7. Consultar qué es y cómo funciona *pip* en python.
-
-8. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
+7. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
